@@ -1,0 +1,241 @@
+@import 'mini.css';
+
+html,
+body {
+  /* background-color: #e2e8ef; */
+  background-color: #333;
+  height: 100%;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+*,
+*:hover,
+*:focus {
+  outline: none !important;
+}
+h3 {
+  color: bisque;
+}
+.card.form .header h3 {
+  color: gray;
+}
+.card {
+  border: 0;
+  border-radius: 4px;
+}
+button {
+  margin: 10px calc(var(--universal-margin) / 2);
+}
+.card.form .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input[type='text'],
+input[type='password'] {
+  border: 3px solid #d7d7d7;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 320px;
+}
+select {
+  background: none;
+  color: lightslategray;
+  border: 0px solid #484848;
+  margin: 0;
+  padding: 0;
+}
+.card.form .section label {
+  color: #adadad;
+}
+.card.form .section.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card.form input {
+  margin: 0;
+}
+.card.form .section.header a {
+  padding-right: 10px;
+  color: #337ec8;
+}
+.card.form .section.message:empty {
+  display: none;
+}
+*,
+h3.htitle {
+  color: antiquewhite;
+}
+.message.success {
+  color: green;
+  background: rgba(0, 128, 0, 0.2);
+}
+.message.error {
+  color: lightcoral;
+  background: rgba(255, 0, 0, 0.2);
+}
+.message.info {
+  color: lightseagreen;
+}
+.response.error {
+  color: lightcoral;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+}
+.container > header {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background-color: #1b1e20;
+}
+.wrapper > .header {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+.addproject {
+  display: flex;
+  flex-direction: column;
+}
+.addproject div {
+  display: flex;
+}
+.addproject div * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header span.title {
+  padding: 0 1em;
+}
+.container header button {
+  background-color: #111;
+  border-color: #4c4c4c;
+  color: slategray;
+}
+.wrapper {
+  margin: 2em auto 0;
+  padding: 0 1em;
+}
+.wrapper input {
+  background: #3d3d3d;
+  border: 3px solid #4d4d4d;
+  color: darkgray;
+}
+.scrollContainer {
+  overflow-x: auto;
+  padding-bottom: 40px;
+}
+.projectList {
+  display: flex;
+}
+.projectListItem {
+  max-width: 180px;
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  padding: 2em;
+}
+.boardContainer {
+  display: table;
+}
+.board {
+  display: table-cell;
+  width: 300px;
+}
+.taskForm {
+  display: flex;
+}
+.createdAt {
+  border-radius: 20px;
+  padding: 0px 10px 3px;
+}
+.createdAt i {
+  font-style: normal;
+  font-size: 13px;
+  padding-left: 10px;
+  border-left: 3px solid;
+}
+a:link,
+i.today,
+a:visited,
+.taskItem span:first-of-type:hover {
+  color: #19a9ff;
+  cursor: pointer;
+}
+span > i.previous {
+  color: dimgray;
+  border-width: 0;
+  padding: 0;
+}
+.taskItem[data-status='false'] + span > i.previous {
+  color: orange;
+  padding-left: 10px;
+  border-left: 3px solid;
+}
+.editLink {
+  padding: 0 10px;
+  display: none;
+  cursor: pointer;
+}
+.editLink:hover,
+.projectName {
+  color: #19a9ff;
+}
+.taskItem:hover .editLink {
+  display: inline;
+}
+.taskItem[data-status='true'] span:first-of-type {
+  text-decoration: line-through;
+  color: green;
+}
+.outlined {
+  color: gray;
+  background: #333;
+  border: 1px solid #484848;
+}
+h5 {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.addtask {
+  line-height: 1;
+  padding: 4px 10px 10px;
+  font-size: 32px;
+}
+li {
+  list-style: none;
+  padding: 0.25em;
+  background: #363636;
+  border: 1px solid #3e3e3e;
+  margin: 0 0 5px;
+}
+li:hover {
+  border-color: #676767;
+}
+ol {
+  padding: 0;
+  margin-left: 4px;
+  margin-right: 13px;
+}
+.taskItem {
+  margin-bottom: 0;
+}
+
+.editLink svg {
+  width: 16px;
+  height: 16px;
+  stroke: dimgray;
+}
+option {
+  color: slategray;
+}
